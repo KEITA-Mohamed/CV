@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+.header-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+    height: 1em;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.header-name{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.nav-header-name{
+    display: none;
+}
+
+
+
+.header-name h1{
+    font-size: 100%;
+}
+
+
+.tiret-ham{
+    width: 50px;
+    height: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.486);
+    display: block;
+    margin: 1px auto;
+    border-radius: 10px;
+}
+
+
+
+#container-nav-header{
+    background-color: white;
+    visibility: hidden; 
+}
+
+#container-nav-header .item-header{
+    list-style: none;
+    display: block;
+    padding: 5%;
+}
+
+#container-nav-header .item-header a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.container-home{
+    
+    animation: diapo 15s infinite ease-in-out both;
+    transition: 0.50s;
+}
+
+
+
+
+@keyframes diapo{
+    0%{
+        background-image: url(img/heron.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    33.33%{
+        background-image: url(img/spider.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    66.66%{
+        background-image: url(img/stones.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+    100%{
+        background-image: url(img/stones2\(1\).jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+    
+}
+
+
+
+#container-nav-header.active{
+    visibility: visible;
+}
+
+
+
+.container-salutation .salutation{
+    color: white;
+    font-size: 300%;
+    text-align: center;
+    font-weight: 1000;
+    transform: translate(0px, -40px);
+ 
+}
+
+.container-salutation .dev{
+    font-size: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 1000;
+    transform: translate(0px, -40px);   
+}
+
+.information{
+    text-align: center;
+   
+}
+
+.information .item-information{
+
+    padding: 4%;
+   
+}
+
+.item-information figcaption{
+    color: black;
+    text-decoration: none;
+}
+
+
+.presentation{
+    text-align: center;
+   height: 20em;
+   background-color: rgba(128, 128, 128, 0.062);
+    padding: 5%;
+    opacity: 0;
+    transform: translate(0, -900px);
+    transition: 2s ease-in;
+}
+
+.presentation h2{
+    margin-bottom: 3%;
+}
+
+.presentation .search-stage{
+    margin-bottom: 3%;
+}
+
+.presentation .text-presentation{
+  font-size: 140%;
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.text-competence{
+    text-align: center;
+    font-size: 150%;
+    font-weight: 1000;
+    opacity: 0;
+   transform: translate(0, 900px);
+   transition: 3s ease-in;
+}
+
+.text-competence h2{
+    margin-bottom: 2%;
+    margin-top: 20%;
+    color: rgba(0, 0, 0, 0.925)
+}
+
+.text-competence p{
+    margin-bottom: 10%;
+    color: rgba(0, 0, 0, 0.596);
+    font-weight: 500;
+}
+
+.language1, .language3{
+    text-align: center;
+    padding: 5% ;
+    transform: translateX(800px);
+    opacity: 0;
+    transition: 3s ease-in;
+}
+
+.language2, .language4{
+    text-align: center;
+    padding: 5% ;
+    transform: translateX(-800px);
+    opacity: 0;
+    transition: 3s ease-in;
+}
+.tiret-html-css{
+    display: flex;
+}
+
+.item-tiret-html-css{
+    width: 12%;
+   border: 1px solid black;
+   margin: 3px;
+}
+
+.tiret-angular-javascript{
+    display: flex;
+}
+
+.item-angular-javascript{
+    width: 12%;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+
+.tiret-php-symfony{
+    display: flex;
+}
+
+.item-tiret-php-symfony{
+    width: 12%;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+.tiret-java{
+    display: flex;
+}
+
+.item-tiret-java{
+    width: 12%;
+    border: 1px solid black;
+    margin: 3px;
+}
+
+.tiret-gray{
+    border: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+.container-savoir-faire{
+    text-align: center;
+    background: rgba(128, 128, 128, 0.199);
+    padding: 10%;
+}
+
+.container-savoir-faire h2{
+    
+    padding: 5%;
+    font-size: 200%;
+}
+
+.responsive, .code, .reseau{
+    margin-top: 15%;
+    transform: rotate(75deg);
+    opacity: 0;
+    transition: 10s ease-in;
+}
+.idea, .team, .outil{
+    margin-top: 15%;
+    transform: rotate(-75deg);
+    opacity: 0;
+    transition: 10s ease-in;
+    
+}
+
+
+
+.container-disponibiliter{
+    margin-top: 25%;
+    text-align: center;
+    font-size: 110%;
+    transform: translate(800px);
+    opacity: 0;
+    transition: 5s ease-in;
+}
+
+.container-disponibiliter p{
+    padding: 2%;
+}
+
+.text-gray{
+    color: rgba(128, 128, 128, 0.548)
+}
+
+#btn{
+    margin-top: 5%;
+    width: 30%;
+    padding: 0.5%;
+    font-size: 80%;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.container-formation{
+    text-align: center;
+    opacity: 0;
+    transform: translateX(-800px);
+    transition: 5s ease-in;
+    background: rgba(128, 128, 128, 0.055);
+}
+
+.container-formation h2{
+    margin-top: 18%;
+    margin-bottom: 5%;
+    padding: 5%;
+}
+
+.container-formation p{
+    margin-bottom: 5%;
+}
+
+.container-contact{
+    background-color: rgba(0, 0, 0, 0.808);
+    opacity: 0;
+    transform: translateX(800px);
+    transition: 5s ease-in;
+  
+  
+}
+.contact h3{
+    text-align: center;
+    padding: 7%;
+    font-size: 150%;
+    color: white
+}
+
+.contact p {
+    color: white;
+    text-align: center;
+}
+
+.contact .item-information{
+    text-align: center;
+}
+
+.contact .item-information figcaption{
+    color: brown;
+    text-align: center;
+    text-decoration: none;
+}
+
+.container-contact p{
+    padding: 4%;
+}
+
+#nom{
+    width: 100%;
+    padding: 2%;
+}
+
+#prenom{
+    width: 100%;
+    padding: 2%;
+}
+
+#mail{
+    width: 100%;
+    padding: 2%;
+}
+
+#message{
+    width: 100%;
+    padding: 10%;
+}
+
+.submit{
+    text-align: center;
+}
+
+#submit{
+    width: 30%;
+    height: 3em;
+    color: white;
+    background-color: black;
+
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 70%;
+}
+
+span{
+    color: red;
+    font-size: 80%;
+
+}
+
+
+@media screen and (min-width: 740px){
+
+    .hamburger, .container-nav-header{
+        display: none;
+    }
+
+    .header-head{
+        position: fixed;
+       background-color:  hsla(0, 28%, 95%, 0.473);
+        display: flex;
+        justify-content: space-around;
+        padding: 1%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+        height: 5%;
+        width: 100%;
+        /*background-color: white; */
+    }
+    
+    .nav-header-name{
+      display: flex;
+      justify-content: center;
+      width: 50%;
+     
+    }
+    
+    .nav-header-name .item-header-name{
+       list-style: none;
+        margin: 6%;
+    }
+    
+    .nav-header-name .item-header-name >a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.699);
+        font-size: 80%
+    ;
+    }
+    
+    .nav-header-name .item-header-name a:hover{
+        border-bottom: 1px black solid;
+        transition: 1s ease-in;
+    }
+    .information{
+        display: flex;
+        justify-content: space-between;
+        height: 10em;
+        align-content: center;
+        
+    }
+    .savoir-faire1{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .savoir-faire2{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .container-salutation .salutation{
+        transform: translate(0 , -100%);
+    }
+    .container-salutation .dev{
+        transform: translate(0 , -300%)
+    }
+    .container-disponibiliter{
+        margin-top: 10%;
+    }
+
+    .container-formation p{
+        padding: 5%;
+    }
+    .container-formation h2{
+        margin-bottom: 1%;
+        padding: 2%;
+    }
+    .contact h3{
+        padding: 3%;
+    }
+  
+    .container-input{
+        display: table;
+        width: 90%;
+    }
+    .input-text{
+        display: table-cell;
+    }
+   
+    
+}
+
+@media screen and (min-width: 1000px){
+    .container-salutation .salutation{
+        transform: translate(0 , -600%);
+    }
+    .container-salutation .dev{
+        transform: translate(0 , -1800%)
+    }
+    .presentation-competence{
+       display: flex;
+    }
+    .container-competence{
+        transform: translate(-5%);
+        width: 100%;
+    }
+    .presentation{
+        width: 100%;
+        height: 100%;
+    }
+    .presentation h2{
+        margin-top: 5%;
+        font-size: 260%;
+    }
+    .text-presentation{
+        margin-top: 10%;
+    }
+    .search-stage{
+        margin-top: 5%;
+    }
+    .container.competence{
+        width: 100%;
+    }
+    .container-savoir-faire{
+        margin-top: 2%;
+        background-color: rgba(128, 128, 128, 0.068);
+    }
+    .container-savoir-faire h2{
+        padding: 0;
+        font-size: 250%;
+        margin-top: 0;
+    }
+    .responsive, .code, .reseau{
+        margin-top: 5%;
+    }
+    .idea, .team, .outil{
+        margin-top: 5%;
+    }
+    .savoir-faire1{
+        justify-content: space-around;
+    }
+    .savoir-faire2{
+        justify-content: space-between;
+    }
+    .container-disponibiliter{
+        margin-top: 2%;
+    }
+    #btn{
+        margin-top: 0;
+        width: 20%;
+        padding: 1%;
+    }
+    .container-formation h2{
+        margin-top: 2%;
+    }
+    .container-formation p{
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    .container-contact{
+       display: table;
+       width: 100%;
+       table-layout: fixed;
+    }
+    .contact{
+      display: table-cell;
+    }
+    .container-contact{
+        padding: 2%;
+    }
+   
+}
